@@ -352,7 +352,9 @@ namespace PanGu
 
                         if (_Options.TraditionalChineseEnabled)
                         {
-                            string simplified = Microsoft.VisualBasic.Strings.StrConv(cur.Value.Word, Microsoft.VisualBasic.VbStrConv.SimplifiedChinese, 0);
+                           // string simplified = Microsoft.VisualBasic.Strings.StrConv(cur.Value.Word, Microsoft.VisualBasic.VbStrConv.SimplifiedChinese, 0);
+
+                            string simplified = STConvert.ToTraditional(cur.Value.Word);
 
                             if (simplified != cur.Value.Word)
                             {
@@ -385,14 +387,16 @@ namespace PanGu
 
                                     if (originalWordType == WordType.SimplifiedChinese)
                                     {
-                                        newWord = Microsoft.VisualBasic.Strings.StrConv(wi.Word, 
-                                            Microsoft.VisualBasic.VbStrConv.TraditionalChinese, 0);
+                                        newWord = STConvert.ToTraditional(wi.Word);
+                                            // Microsoft.VisualBasic.Strings.StrConv(wi.Word, 
+                                           // Microsoft.VisualBasic.VbStrConv.TraditionalChinese, 0);
                                         wt = WordType.TraditionalChinese;
                                     }
                                     else
                                     {
-                                        newWord = Microsoft.VisualBasic.Strings.StrConv(wi.Word, 
-                                            Microsoft.VisualBasic.VbStrConv.SimplifiedChinese, 0);
+                                        newWord = STConvert.ToSimplified(wi.Word);
+                                            //Microsoft.VisualBasic.Strings.StrConv(wi.Word, 
+                                            //Microsoft.VisualBasic.VbStrConv.SimplifiedChinese, 0);
                                         wt = WordType.SimplifiedChinese;
                                     }
 

@@ -140,9 +140,9 @@ namespace PanGu.Framework
                     }
                     catch (IOException e)
                     {
-                        uint hResult = (uint)System.Runtime.InteropServices.Marshal.GetHRForException(e);
-                        if (hResult == ERR_PROCESS_CANNOT_ACCESS_FILE)
-                        {
+                        //uint hResult = (uint)System.Runtime.InteropServices.Marshal.GetHRForException(e);
+                        //if (hResult == ERR_PROCESS_CANNOT_ACCESS_FILE)
+                        //{
                             if (times > 10)
                             {
                                 //Maybe another program has some trouble with file
@@ -152,11 +152,11 @@ namespace PanGu.Framework
 
                             System.Threading.Thread.Sleep(200);
                             times++;
-                        }
-                        else
-                        {
-                            throw e;
-                        }
+                        //}
+                        //else
+                        //{
+                        //    throw e;
+                        //}
                     }
                 }
             }
@@ -183,9 +183,9 @@ namespace PanGu.Framework
                 }
                 catch (IOException e)
                 {
-                    uint hResult = (uint)System.Runtime.InteropServices.Marshal.GetHRForException(e);
-                    if (hResult == ERR_PROCESS_CANNOT_ACCESS_FILE)
-                    {
+                    //uint hResult = (uint)System.Runtime.InteropServices.Marshal.GetHRForException(e);
+                    //if (hResult == ERR_PROCESS_CANNOT_ACCESS_FILE)
+                    //{
                         if (times > 10)
                         {
                             //Maybe another program has some trouble with file
@@ -195,11 +195,11 @@ namespace PanGu.Framework
 
                         System.Threading.Thread.Sleep(200);
                         times++;
-                    }
-                    else
-                    {
-                        throw e;
-                    }
+                    //}
+                    //else
+                    //{
+                    //    throw e;
+                    //}
                 }
             }
         }
@@ -224,9 +224,9 @@ namespace PanGu.Framework
                 }
                 catch (IOException e)
                 {
-                    uint hResult = (uint)System.Runtime.InteropServices.Marshal.GetHRForException(e);
-                    if (hResult == ERR_PROCESS_CANNOT_ACCESS_FILE)
-                    {
+                    //uint hResult = (uint)System.Runtime.InteropServices.Marshal.GetHRForException(e);
+                    //if (hResult == ERR_PROCESS_CANNOT_ACCESS_FILE)
+                    //{
                         if (times > 10)
                         {
                             //Maybe another program has some trouble with file
@@ -236,11 +236,11 @@ namespace PanGu.Framework
 
                         System.Threading.Thread.Sleep(200);
                         times++;
-                    }
-                    else
-                    {
-                        throw e;
-                    }
+                    //}
+                    //else
+                    //{
+                    //    throw e;
+                    //}
                 }
             }
         }
@@ -269,9 +269,9 @@ namespace PanGu.Framework
                 }
                 catch (IOException e)
                 {
-                    uint hResult = (uint)System.Runtime.InteropServices.Marshal.GetHRForException(e);
-                    if (hResult == ERR_PROCESS_CANNOT_ACCESS_FILE)
-                    {
+                    //uint hResult = (uint)System.Runtime.InteropServices.Marshal.GetHRForException(e);
+                    //if (hResult == ERR_PROCESS_CANNOT_ACCESS_FILE)
+                    //{
                         if (times > 10)
                         {
                             //Maybe another program has some trouble with file
@@ -281,11 +281,11 @@ namespace PanGu.Framework
 
                         System.Threading.Thread.Sleep(200);
                         times++;
-                    }
-                    else
-                    {
-                        throw e;
-                    }
+                    //}
+                    //else
+                    //{
+                    //    throw e;
+                    //}
                 }
 
             }

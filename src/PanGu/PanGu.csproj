@@ -37,7 +37,6 @@
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -79,6 +78,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setting\PanGuSettings.cs" />
     <Compile Include="Setting\SettingLoader.cs" />
+    <Compile Include="STConvert.cs" />
     <Compile Include="WordAttribute.cs" />
     <Compile Include="WordInfo.cs" />
   </ItemGroup>
